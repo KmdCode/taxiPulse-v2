@@ -2,14 +2,14 @@ import { useState } from "react";
 import { FaHome, FaBell, FaUser } from "react-icons/fa";
 
 const DriverHome = () => {
-  const driverName = "John Doe";
+  const driverName = "Karabo Modise";
   const route = "Pretoria to Johannesburg";
   const queue = ["Driver 1", "Driver 2", "Driver 3", "Driver 4", "Driver 4", "Driver 4", "Driver 4", "Driver 5"];
 
   return (
     <div className="flex min-h-screen flex-col bg-background text-text">
       <header className="flex items-center justify-between p-4 bg-white shadow-md">
-        <h1 className="text-lg font-semibold">MyApp</h1>
+        <h1 className="text-lg font-semibold">TaxiPulse</h1>
         <div className="flex items-center space-x-3">
           <span className="text-sm font-medium">{driverName}</span>
           <img

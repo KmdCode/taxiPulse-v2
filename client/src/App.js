@@ -5,11 +5,12 @@ import DriverHome from './components/Driver/DriverHome';
 import DriverNotifications from './components/Driver/DriverNotifications';
 import DriverProfile from './components/Driver/DriverProfile';
 import ManagerHome from './components/Manager/ManagerHome';
+import ManagerDashboard from './components/Manager/ManagerDashboard';
 
 function App() {
   return (
     <div className="App">
-      <ManagerHome/>
+      <ManagerDashboard/>
     </div>
   );
 }

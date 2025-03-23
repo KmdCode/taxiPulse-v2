@@ -12,11 +12,7 @@ const DriverHome = () => {
         <h1 className="text-lg font-semibold">TaxiPulse</h1>
         <div className="flex items-center space-x-3">
           <span className="text-sm font-medium">{driverName}</span>
-          <img
-            src="/profile.jpg"
-            alt="Driver Profile"
-            className="h-10 w-10 rounded-full object-cover"
-          />
+          
         </div>
       </header>
 
@@ -29,7 +25,7 @@ const DriverHome = () => {
 
       <section className="p-4">
         <img
-          src="/burner-image.jpg"
+          src="https://picsum.photos/400/150"
           alt="Burner"
           className="w-full rounded-lg shadow-md"
         />
@@ -50,8 +46,8 @@ const DriverHome = () => {
 
       <nav className="fixed bottom-0 left-0 right-0 flex justify-around bg-white p-3 shadow-md">
         <button className="flex flex-col items-center">
-          <FaHome className="text-xl" />
-          <span className="text-xs">Home</span>
+          <FaHome className="text-xl text-blue-500" />
+          <span className="text-xs text-blue-500">Home</span>
         </button>
         <button className="flex flex-col items-center">
           <FaBell className="text-xl" />

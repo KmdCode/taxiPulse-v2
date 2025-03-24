@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -54,7 +55,9 @@ const Signup = () => {
             type="submit"
             className="w-full rounded-md bg-black p-3 text-white transition hover:opacity-90"
           >
-            Sign Up
+           <Link to="/managerhome" className="text-white block w-full text-center">
+                Login
+              </Link>
           </button>
         </form>
         <p className="mt-4 text-center text-sm text-gray-600">

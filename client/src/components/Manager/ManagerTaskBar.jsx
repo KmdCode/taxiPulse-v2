@@ -20,7 +20,7 @@ const ManagerTaskBar = () => {
                 <span className="text-xs">Analytics</span>
             </Link>
 
-            <Link to="/driverprofile" className="flex flex-col items-center text-black">
+            <Link to="/managerprofile" className="flex flex-col items-center text-black">
                 <FaUser className="text-xl" />
                 <span className="text-xs">Profile</span>
             </Link>

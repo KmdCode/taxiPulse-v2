@@ -3,7 +3,7 @@ import ManagerTaskBar from "./ManagerTaskBar";
 
 const ManagerDashboard = () => {
   const managerName = "Sanele Ndlovu";
-  const route = "Garankuwa to Pretoria";
+  const route = "Pretoria To Johannesburg";
   const [queue, setQueue] = useState(["Driver 1", "Driver 2", "Driver 3"]);
   const [driversServed, setDriversServed] = useState(15);
 

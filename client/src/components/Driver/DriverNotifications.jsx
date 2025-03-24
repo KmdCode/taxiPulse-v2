@@ -1,4 +1,5 @@
 import { FaHome, FaBell, FaUser } from "react-icons/fa";
+import NavBar from "./NavBar";
 
 const DriverNotifications = () => {
   const driverName = "Karabo Modise";
@@ -15,11 +16,6 @@ const DriverNotifications = () => {
         <h1 className="text-lg font-semibold">TaxiPulse</h1>
         <div className="flex items-center space-x-3">
           <span className="text-sm font-medium">{driverName}</span>
-          <img
-            src="/profile.jpg"
-            alt="Driver Profile"
-            className="h-10 w-10 rounded-full object-cover"
-          />
         </div>
       </header>
 
@@ -43,20 +39,7 @@ const DriverNotifications = () => {
         </div>
       </section>
 
-      <nav className="fixed bottom-0 left-0 right-0 flex justify-around bg-white p-3 shadow-md">
-        <button className="flex flex-col items-center">
-          <FaHome className="text-xl" />
-          <span className="text-xs">Home</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaBell className="text-xl text-blue-500" />
-          <span className="text-xs text-blue-500">Notifications</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaUser className="text-xl" />
-          <span className="text-xs">Profile</span>
-        </button>
-      </nav>
+      <NavBar/>
     </div>
   );
 };

@@ -1,4 +1,5 @@
-import { FaHome, FaBell, FaUser } from "react-icons/fa";
+import React from "react";
+import NavBar from "./NavBar";
 
 const DriverProfile = () => {
   const driver = {
@@ -57,20 +58,7 @@ const DriverProfile = () => {
         </button>
       </section>
 
-      <nav className="fixed bottom-0 left-0 right-0 flex justify-around bg-white p-3 shadow-md">
-        <button className="flex flex-col items-center">
-          <FaHome className="text-xl" />
-          <span className="text-xs">Home</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaBell className="text-xl" />
-          <span className="text-xs">Notifications</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaUser className="text-xl text-blue-500" />
-          <span className="text-xs text-blue-500">Profile</span>
-        </button>
-      </nav>
+      <NavBar/>
     </div>
   );
 };

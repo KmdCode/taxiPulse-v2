@@ -1,6 +1,7 @@
-import { FaHome, FaChartBar, FaClipboardList, FaUser, FaDownload } from "react-icons/fa";
+import {FaDownload } from "react-icons/fa";
 import { Bar, Pie } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, ArcElement, Tooltip, Legend } from "chart.js";
+import ManagerTaskBar from "./ManagerTaskBar";
 
 // Register Chart.js components
 ChartJS.register(CategoryScale, LinearScale, BarElement, ArcElement, Tooltip, Legend);
@@ -75,25 +76,7 @@ const ManagerAnalytics = () => {
         </button>
       </section>
 
-      {/* Bottom Tab Bar */}
-      <nav className="fixed bottom-0 left-0 right-0 flex justify-around bg-white p-3 shadow-md">
-        <button className="flex flex-col items-center">
-          <FaHome className="text-xl" />
-          <span className="text-xs">Home</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaClipboardList className="text-xl" />
-          <span className="text-xs">Dashboard</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaChartBar className="text-xl text-blue-500" />
-          <span className="text-xs text-blue-500">Analytics</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaUser className="text-xl" />
-          <span className="text-xs">Profile</span>
-        </button>
-      </nav>
+      <ManagerTaskBar/>
     </div>
   );
 };

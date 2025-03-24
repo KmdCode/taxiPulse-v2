@@ -1,4 +1,5 @@
-import { FaHome, FaChartBar, FaClipboardList, FaUser, FaUserPlus, FaEdit } from "react-icons/fa";
+import { FaUserPlus, FaEdit } from "react-icons/fa";
+import ManagerTaskBar from "./ManagerTaskBar";
 
 const ManagerProfile = () => {
   const managerName = "Sanele Ndlovu";
@@ -41,24 +42,7 @@ const ManagerProfile = () => {
         </button>
       </section>
 
-      <nav className="fixed bottom-0 left-0 right-0 flex justify-around bg-white p-3 shadow-md">
-        <button className="flex flex-col items-center">
-          <FaHome className="text-xl" />
-          <span className="text-xs">Home</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaClipboardList className="text-xl" />
-          <span className="text-xs">Dashboard</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaChartBar className="text-xl" />
-          <span className="text-xs">Analytics</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaUser className="text-xl text-blue-500" />
-          <span className="text-xs text-blue-500">Profile</span>
-        </button>
-      </nav>
+      <ManagerTaskBar/>
     </div>
   );
 };

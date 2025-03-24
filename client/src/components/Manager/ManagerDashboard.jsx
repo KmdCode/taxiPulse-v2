@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaHome, FaChartBar, FaClipboardList, FaUser } from "react-icons/fa";
+import ManagerTaskBar from "./ManagerTaskBar";
 
 const ManagerDashboard = () => {
   const managerName = "Sanele Ndlovu";
@@ -63,24 +63,8 @@ const ManagerDashboard = () => {
         </div>
       </section>
 
-      <nav className="fixed bottom-0 left-0 right-0 flex justify-around bg-white p-3 shadow-md">
-        <button className="flex flex-col items-center">
-          <FaHome className="text-xl" />
-          <span className="text-xs">Home</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaClipboardList className="text-xl text-blue-500" />
-          <span className="text-xs text-blue-500">Dashboard</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaChartBar className="text-xl" />
-          <span className="text-xs">Analytics</span>
-        </button>
-        <button className="flex flex-col items-center">
-          <FaUser className="text-xl" />
-          <span className="text-xs">Profile</span>
-        </button>
-      </nav>
+      <ManagerTaskBar/>
+      
     </div>
   );
 };

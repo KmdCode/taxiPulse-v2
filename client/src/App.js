@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Login from './components/Authentication/Login';
 import Signup from './components/Authentication/Signup';
 import DriverHome from './components/Driver/DriverHome';
@@ -9,10 +10,23 @@ import ManagerDashboard from './components/Manager/ManagerDashboard';
 import ManagerAnalytics from './components/Manager/ManagerAnalytics';
 import ManagerProfile from './components/Manager/ManagerProfile';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <ManagerProfile/>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/signup" element={<Signup/>}/>
+          <Route path="/driverhome" element={<DriverHome/>}/>
+          <Route path="/notifications" element = {<DriverNotifications/>}/>
+          <Route path="/driverprofile" element={<DriverProfile/>}/>
+          <Route path="/managerhome" element={<ManagerHome/>}/>
+          <Route path="/dashboard" element={<ManagerDashboard/>}/>
+          <Route path="/analytics" element={<ManagerAnalytics/>}/>
+          <Route path="/managerprofile" element={<ManagerProfile/>}/>
+        </Routes>
+      </Router>
+      
     </div>
   );
 }

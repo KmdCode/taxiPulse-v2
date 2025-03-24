@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {Link} from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -32,7 +33,9 @@ const Login = () => {
             type="submit"
             className="w-full rounded-md bg-black p-3 text-white transition hover:opacity-90"
           >
-            Login
+              <Link to="/driverhome" className="text-white block w-full text-center">
+                Login
+              </Link>
           </button>
         </form>
         <p className="mt-4 text-center text-sm text-gray-600">

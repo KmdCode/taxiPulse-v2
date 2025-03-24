@@ -16,15 +16,9 @@ const DriverProfile = () => {
         <h1 className="text-lg font-semibold">TaxiPulse</h1>
         <div className="flex items-center space-x-3">
           <span className="text-sm font-medium">{driver.name}</span>
-          <img
-            src="/profile.jpg"
-            alt="Driver Profile"
-            className="h-10 w-10 rounded-full object-cover"
-          />
         </div>
       </header>
 
-      {/* Profile Info Section */}
       <section className="p-4">
         <div className="rounded-lg bg-white p-4 shadow-md">
           <h2 className="text-lg font-semibold mb-3">Profile Information</h2>
@@ -59,6 +53,7 @@ const DriverProfile = () => {
       </section>
 
       <NavBar/>
+      
     </div>
   );
 };
